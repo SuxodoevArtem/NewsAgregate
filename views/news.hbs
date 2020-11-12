@@ -1,0 +1,20 @@
+
+<div class="container-fluid myCards" >
+     {{#if news.length}}
+     {{#each news}}
+        <a href={{news_link}} target="_blank"> 
+            <div class="card bg-light">
+                <img class="myCardImg" src={{news_img}} alt={{news_title}}>
+                <div class="card-body">
+                    <h5 class="card-title">{{news_title}}</h5>
+                    <p class="card-text"><small class="text-muted">{{news_date}}</small></p>
+                </div>  
+            </div>
+        </a>
+    {{/each}}
+    {{else}}
+        <p>Новостей пока нет ):</p>
+    {{/if}}       
+</div>
+
+

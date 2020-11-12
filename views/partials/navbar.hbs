@@ -1,0 +1,18 @@
+<nav class="navbar navbar-light bg-light myNav">
+    <a href="/settings">
+        <button type="button" class="btn btn-outline-secondary myCogIcon">
+            <i class="fas fa-cog"></i>
+        </button>
+    </a>
+    <a href="/">
+        <h1 class="nav-item " style="margin-left: 74px;">Новости</h1>
+    </a>
+    <form class="form-inline" action="/keyword" method="GET">
+        <div class="input-group">
+            <button type="submit" class="btn btn-outline-secondary">
+                <i class="fas fa-search"></i>
+            </button>
+            <input type="text" class="form-control" placeholder="Поиск..." aria-label="find" aria-describedby="basic-addon1" name="keyword">
+        </div>
+    </form>
+</nav>

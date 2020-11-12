@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.myNav{
+    position: relative;
+    box-shadow: 0px 4px 19px 0px #B0B8BA;
+}
+
+.myCogIcon{
+    color: rgb(126, 121, 121);
+    font-size: 38px;
+    cursor: pointer;
+}
+
+.myCards{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.card{
+    height: 19.5rem;
+    min-width: 20.5rem;
+    max-width: 22rem;
+    margin: 5px;
+}
+
+.myCardImg{
+    max-width: auto;
+    height: 12.5rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-title{
+    font-size: 14px;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+.mySettings{
+    padding: 2rem;
+}
+
+.btn-delete{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+

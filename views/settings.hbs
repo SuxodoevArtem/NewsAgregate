@@ -1,0 +1,30 @@
+<div class="container-fluid mySettings">
+    <form action="/settings/add" class="form-inline" method="POST">
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="url" class="sr-only" >URL</label>
+            <input type="text" class="form-control"  placeholder="URL" name="url" required>
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Добавить</button>
+    </form> 
+    <ul class="list-group mx-sm-3">
+        {{#if rssCanels.length}}
+        {{#each rssCanels}}
+        <form action="/settings/remove" method="POST">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    {{rsschannels_link}} 
+                    <span class="badge badge-primary badge-pill">{{num_news}}</span>
+                </div>                
+                <button type="submit" class="btn  btn-outline-danger  ">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+                <input type="hidden" name="id" value="{{rsschannels_id}}">
+            </li>
+        </form>
+        {{/each}}
+        {{else}}
+            <p>Добавьте RSS канал</p>
+        {{/if}}
+    </ul>
+</div>
+    
